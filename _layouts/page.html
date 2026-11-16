@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include rule.html %}
+<h2 class="brand center" id="title">{{ page.title | upcase }}</h2>
+{% if page.subtitle %}
+<p class="center italics subtitle">{{ page.subtitle }}</p>
+{% endif %}
+{% include rule.html class="flip" %}
+
+<div class="justify page-body">
+  {{ content }}
+</div>

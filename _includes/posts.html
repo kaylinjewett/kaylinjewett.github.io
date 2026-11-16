@@ -1,0 +1,14 @@
+<div class="articles">
+  {% for post in site.posts %}
+  {% cycle 'open': '<div class="row">', '', '' %}
+  <div class="four columns">
+    <a href="{{ post.url | relative_url }}" class="link">
+      <h3>{{ post.title }}</h3>
+      <div class="justify">{{ post.excerpt | strip_html | truncatewords: 50 }}</div>
+    </a>
+  </div>
+  {% cycle 'close': '', '', '</div>' %}
+  {% endfor %}
+  {% assign left = site.posts.size | modulo: 3 %}
+  {% if left != 0 %}</div>{% endif %}
+</div>

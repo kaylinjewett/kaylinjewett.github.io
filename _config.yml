@@ -1,0 +1,10 @@
+title: Kaylin Jewett
+description: DESCRIPTION
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - tools
+  - vendor

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% include rule.html %}
+<p class="center">{{ page.date | date_to_long_string | upcase }}</p>
+{% include rule.html class="flip" %}
+
+<h2 class="brand center" id="title">{{ page.title | upcase }}</h2>
+{% if page.category %}
+{% include rule.html class="tag flip" %}
+<p class="right tagline">{{ page.category }}</p>
+{% include rule.html class="tag" %}
+{% endif %}
+
+<div class="threecol justify">
+  {{ content }}
+</div>

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include masthead.html %}
+
+<div class="threecol justify">
+  {{ content }}
+</div>
+
+{% if site.posts.size > 0 %}
+  {% include rule.html %}
+  {% include posts.html %}
+{% endif %}

@@ -1,0 +1,7 @@
+{% include rule.html %}
+{% if site.author %}<p class="center author">{{ site.author }}</p>{% endif %}
+{% include rule.html class="flip" %}
+<h1 class="brand title center" id="title">{{ site.title | upcase }}</h1>
+{% include rule.html class="tag flip" %}
+{% if site.tagline %}<p class="right tagline">{{ site.tagline }}</p>{% endif %}
+{% include rule.html class="tag" %}
